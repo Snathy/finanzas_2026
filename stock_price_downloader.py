@@ -4,7 +4,6 @@ Stock Price Downloader Module
 This module provides a clean, reusable class for downloading and analyzing
 stock price data from Yahoo Finance.
 """
-import lseg.data as ld
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -58,12 +57,6 @@ class StockPriceDownloader:
     def __str__(self):
         return f"{self.ticker}"
 
-    def get_session(self):
-        try:
-            ld.open_session()
-        except Exception as e:
-            print(f"Error opening session: {e}")
-        return ld  
     
     def _validate_inputs(
         self, 
