@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 from typing import Optional, Dict, Any
-
+ 
 
 class StockPriceDownloader:
     """
@@ -99,7 +99,10 @@ class StockPriceDownloader:
         """
         try:
             print(f"Downloading {self.ticker} data from {self.start_date} to {self.end_date}...")
+<<<<<<< Updated upstream
             #ld = self.get_session()
+=======
+>>>>>>> Stashed changes
 
             ##self.data = ld.get_history(
             ##    universe=[self.ticker], 
