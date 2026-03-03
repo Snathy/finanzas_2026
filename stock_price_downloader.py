@@ -100,7 +100,10 @@ class StockPriceDownloader:
         try:
             print(f"Downloading {self.ticker} data from {self.start_date} to {self.end_date}...")
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             #ld = self.get_session()
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
